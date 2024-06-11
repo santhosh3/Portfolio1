@@ -246,6 +246,7 @@ i {
     margin-top: 2rem;
     max-width: 210px;
     padding: 0px 10px 0px 0px;
+    border-radius: 20%;
 }
 
 #about-para {
@@ -354,6 +355,7 @@ hr {
     .profile {
         max-width: 180px;
         margin-top: 0rem;
+        border-radius: 20%;
     }
     .img-caption {
         font-size: 0.7rem;
@@ -373,6 +375,7 @@ hr {
         padding-left: 10px;
         max-width: 230px;
         margin-top: 0.5rem;
+        border-radius: 20%;
     }
     .img-caption {
         width: 100%;
@@ -445,6 +448,10 @@ hr {
 
 .card:hover:before {
     transform: scale(2.15);
+}
+
+.skill_image{
+    object-fit: contain;
 }
 
 /* Projects section - carousel */
@@ -814,13 +821,18 @@ a:hover {
 }
 
 .skills-container{
-    display:flex;
-    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 655px;
-    margin: auto;
-    column-gap: 70px;
-  
+    align-items: center;
+    margin-top: 10px;
+}
+
+.skill_image{
+    height: 100px;
+    width: 100px;
 }
 
 @media (max-width:375px){
